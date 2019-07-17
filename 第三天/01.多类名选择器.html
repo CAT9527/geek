@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>多类名选择器</title>
+	<style>
+		div{
+			color:#4FB648FF;
+			font-size: 20px;
+		}
+		.box1{
+			color: skyblue;
+			font-size: 15px;
+		}
+		/* 无空格 */
+
+		.box1.t{
+			color: red;
+			font-size: 30px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<p>在div里面只能有一个class选择器
+	需要多个样式的时候就可以使用多类名选择器
+	不允许div class = "red" class = "blue"
+	但是可以 div class = "red blue" 这样才能使用两个类选择器
+	两个类名前后顺序没有关系</p>
+
+	<div class="box1 t">多类名</div>
+	<div class="box1">多类名</div>
+	<div class="">多类名</div>
+	<div class="">多类名</div>
+	<div class="">多类名</div>
+	<div class="">多类名</div>
+	<div class="">多类名</div>
+	<div class="box1">多类名</div>
+	<div class="box1 t">多类名</div>
+</body>
+</html>

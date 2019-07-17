@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css选择器</title>
+	<style>
+	/* 通配符选择器 */
+	*{
+		font-size: 50px;
+	}
+	/* id选择器 */
+	#a1{
+	color: red;
+	}
+	/* 类选择器 */
+	.b1{
+		color:green;
+	}
+	/* 元素选择器 */
+	span{
+		color:skyblue;
+	}
+	/* 多元素选择器*/ 
+	div span{
+		color:yellow;
+	}
+	a {   
+		font-weight: 700;
+		font-size: 16px;
+		color: gray;
+	}
+	/* 伪类选择器 */
+    a:hover {   
+		color: red; 
+    }
+
+
+
+	</style>
+</head>
+
+<body>
+	<div id="a1">Abcdefgh</div>
+	<div class="b1">Abcdefgh</div>
+	<span>这是div外面的span标签</span>
+	<div>
+	<span>这是div里面的span标签</span>
+	</div>
+	<a href="#">超链接</a>
+
+</body>
+</html>
