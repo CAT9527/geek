@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器</title>
+	<style>
+
+		/* 后代选择器 */
+		div p{
+			color:pink;
+		}
+		div .ai{
+			color:skyblue;
+		}
+		.one p{
+			color:#D93925FF;
+		}
+
+
+		/* 子代选择器 */
+
+		ul > a{
+			color: pink;
+			text-decoration: none;
+		}
+		li> a{
+			color: skyblue;
+			text-decoration: line-through;
+		}
+
+		/* 交集选择器 */
+		div.red{
+			color: red;
+		}
+
+		/* 并集选择器 */
+
+		div,p,span,h1,a{
+			color: pink;
+		}
+	</style>
+</head>
+<body>
+	<div><p>ABCD</p></div>
+	<div><p class="ai">ABCD</p></div>
+	<div class="one"><p>ABCD</p></div>
+	<div class="two"><p>ABCD</p></div>
+	<ul>
+		<a href="#">第一级菜单</a>
+		<li>
+			<ul>
+				<li><a href ="#">第二级菜单</a></li>
+				<li><a href="#">第二级菜单</a></li>
+				<li><a href="#">第二级菜单</a></li>
+			</ul>
+	    </li>
+	</ul>
+
+    <div class = "red">交集</div>
+
+    <div>并集选择器</div>
+	<p>并集选择器</p>
+	<span>并集选择器</span>
+	<h1>并集选择器</h1>
+	<a href="#">并集选择器</a>
+</body>
+</html>
