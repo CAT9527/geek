@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内边距问题</title>
+	<style>
+		div {
+			width: 160px;
+			height: 160px;
+			border:1px solid red;
+			padding:20px;
+			/*非常严重的问题，padding会撑开带width和height的盒子*/
+			/*1.我们要求一个div必须是200 x 200
+			  2.但是我们给了pdding 20px 就会撑开盒子  240 px
+			  3.问：我们如何保证盒子不超过200*200
+
+			  答：去修改宽高保持盒子200*200
+			*/
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

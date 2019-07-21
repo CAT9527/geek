@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*1.类选择器权重值 高于 标签权重值*/
+
+		#blue {
+			color: blue;
+		}
+
+
+		.asd {
+			color: yellow;
+		}
+		div {
+			color: red!important;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="asd" id = "blue" style="color: green;">权重</div>
+</body>
+</html>

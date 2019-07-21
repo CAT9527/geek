@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新闻列表</title>
+	<style>
+/* 		div {
+	width: 100px;
+	height: 100px;
+	border: 2px solid red;
+	padding: 20px;
+	margin: 30px;
+} */
+
+   /*一开始都应该清除默认样式*/
+    * {
+    	/*清除内外样式*/
+    	padding: 0;
+    	margin: 0;
+    }
+    .article {
+    	width: 378px;
+    	height: 263px;
+    	border: 1px solid #ccc;
+    	margin: 100px;
+    	padding:20px 15px 0;
+    	margin-bottom: 12px;
+    }
+    .article h4{
+    	font-family: "微软雅黑";
+    	font-size: 20px; 
+    	color: #202026;
+    	border-bottom:1px solid #ccc;
+    }
+    li{
+    	list-style: none;  /*取消li前面的点，可以放在通配符选择器里*/
+    }
+    .article ul li{
+    	height: 38px;
+    	line-height: 38px;
+    	border-bottom: 1px dashed #ccc;
+    	text-indent: 2em;
+    }
+
+    .article a {
+    	font-size: 12px;
+    	color:#333;
+    	text-decoration:none;
+    }
+    .article a:hover {
+    	color: red;
+    	text-decoration: underline;
+    }
+    .article ul{
+    	margin-top: 12px;
+    }
+	</style>
+</head>
+<body>
+	<div class="article">
+		<h4>最新文章/New Articles</h4>
+		<ul>
+			<li><a href="">在武汉切进去的瓦斯监控</a></li>
+			<li><a href="">为楷模求科普我么的历史</a></li>
+			<li><a href="">几位偶分看电视了</a></li>
+			<li><a href="">欧的玩具艾克</a></li>
+			<li><a href="">挖掘滴哦我看打击到</a></li>
+		</ul>
+	</div>
+</body>
+</html>
