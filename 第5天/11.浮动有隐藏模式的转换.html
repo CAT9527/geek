@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>隐藏模式的转换</title>
+	<style>
+		div{
+			height: 100px;
+			background-color: red;
+			float: left; 
+			/*浮动可以让元素默认转换成行内块元素*/
+		}
+		span {
+			width: 100px;
+			height: 100px;
+			background-color: skyblue;
+			float: left;
+			/*如果已经给行内元素添加了浮动，那么这个元素就不需要再进行转换也可以有宽高了*/
+		}
+	</style>
+</head>
+<body>
+	<div>sadsdas</div>
+	<span>dassdaisdjasd</span>
+</body>
+</html>

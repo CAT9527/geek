@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>外边距的塌陷问题（父与子）</title>
+	<style>
+		.father {
+			width: 500px;
+			height: 500px;
+			background-color: red;
+			margin-top: 60px; 
+			/*解决方法*/
+			/*border-top: 1px solid pink;   用border*/
+			/*padding-top: 1px;      用padding*/
+			/*反正要么使用overflow，要么使用border或者padding把两个外边距分隔开，不然会发生塌陷问题*/
+			overflow: hidden;
+		}
+		.son {
+			width: 250px;
+			height: 250px;
+			background-color: skyblue;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

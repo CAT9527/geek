@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>左右型结构</title>
+	<style>
+		.top,
+		.banner,
+		.main,
+		.footer {
+			width: 900px;
+			background-color: skyblue;
+			border: 1px dashed #ccc;
+			color: #DA3024FF;
+			text-align: center;
+		}
+		.top {
+			height: 100px;
+			margin:0 auto;
+			line-height: 100px;
+		}
+		.banner {
+			height: 80px;
+			margin: 5px auto;
+			line-height: 80px;			
+		}
+		.main {
+			height: 500px;
+			margin: 0 auto;
+			line-height: 500px;
+		}
+		.left {
+			width: 297px;
+			height: 498px;
+			float: left;
+			margin-right: 2px;
+			background-color: #715AA4FF;
+			border:1px solid red;
+		}
+		.right {
+			width: 593px;
+			height: 498px;
+			float: right;
+			background-color: #22DC40FF;
+			border:1px solid red;
+		}
+		.footer {
+			height: 100px;
+			margin:0 auto;
+			margin-top: 5px;
+           line-height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">top</div>
+	<div class="banner">banner</div>
+	<div class="main">
+		<div class="left">left</div>
+		<div class="right">right</div>
+	</div>
+	<div class="footer">footer</div>
+</body>
+</html>

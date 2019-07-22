@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>一列固定宽度且居中</title>
+	<style>
+		.top,
+		.banner,
+		.main,
+		.footer {
+			width: 900px;
+			background-color: #EEF;
+			border: 1px dashed #ccc;
+			color: #ccc;
+			text-align: center;
+		}
+		/*并集选择器，集体声明相同部分，减少内存*/
+		.top {
+			height: 80px;
+			margin:0 auto;
+			line-height: 80px;			
+		}
+		.banner {
+			height: 50px;
+			margin:5px auto;
+			line-height: 50px;			
+		}
+		.main {
+			height: 800px;
+			margin:0 auto;
+            line-height: 800px;	
+		}
+		.footer {
+			height: 80px;
+			margin:0 auto;
+			margin-top: 5px;
+            line-height: 80px;	
+		}
+
+	</style>
+</head>
+<body>
+	<div class="top">TOP</div>
+	<div class="banner">BANNER</div>
+	<div class="main">MAIN</div>
+	<div class="footer">FOOTER</div>
+</body>
+</html>

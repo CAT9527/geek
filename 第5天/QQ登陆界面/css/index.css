@@ -1,0 +1,122 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style: none;
+}
+/*所有主体*/
+.login {
+	width: 430px;
+	height: 330px;
+	/*padding: 8px 8px 12px 5px;*/
+	margin :50px auto;
+	background-color: white;
+	border: 1px solid #ccc;
+	box-shadow: 4px 4px 14px #ccc;
+	border-radius: 5px;
+}
+.up {
+	height: 128px;
+	background-color: #9387FFFF;
+}
+.logo {
+	float: left;
+	margin-top: 8px;
+	margin-left: 6px;
+}
+.setting{
+	float: right;
+	margin-top: 8px;
+	
+}
+.setting li{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: 2px;
+}
+
+.down {
+	width: 430px;
+	height: 203px;
+	
+}
+.touxiang {
+	width: 64px;
+	height: 64px;	
+	background-color:#F9AE08FF; 
+	border:1px solid white;
+	border-radius: 34px;
+	margin: -32px auto;
+}
+
+/*.zhanghao {
+	text-align: center;
+	margin:32px auto 0;
+}*/
+.san {
+	width: 240px;
+	height: 12px;
+	color:#ccc;
+	font-size: 12px;
+	margin:15px auto 1px;
+}
+.zhanghao,
+.mima {
+	text-align: center;
+}
+input{
+	width: 240px;
+	height: 30px;
+	border:none;
+	border-bottom: 1px solid #ccc;
+}
+a{
+	text-decoration: none;
+	color: #ccc;
+}
+.zhanghao {
+	margin:32px auto 15px;
+}
+
+.mima {
+	margin: 0 auto;
+}
+
+.san input{
+	width: 10px;
+	height: 10px;
+	padding: 10px;
+}
+.san .one {
+	float: left;
+	padding-right: 12px;
+}
+.san .two {
+	float: left;
+	padding-right: 12px;
+}
+.san a {
+	float: right;
+}
+.button {
+	width: 240px;
+	height: 24px;
+	margin:12px auto 1px;
+}
+.button input {
+	background-color: #05BBFBFF;
+	color: white;
+	box-shadow: 1px 1px 5px #ccc;
+	border-radius: 5px;
+}
+.last_one {
+	font-size:14px;
+	color: #ccc;
+	padding: 1px 15px; 
+}
+.last_one img {
+	float: right;
+	margin: -10px -6px;
+}

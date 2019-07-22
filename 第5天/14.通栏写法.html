@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>通栏结构</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.top {
+			height: 100px;
+			background-color: #4A8AB4FF;
+			color: red;
+		}
+		.top-inner {
+			width: 900px;
+			height: 100px;
+			background-color: #DF8FACFF;
+			margin:0 auto;
+		}
+		.banner {
+			height: 80px;
+			width: 900px;
+			background-color: #E74B17FF;
+			color: red;
+			margin:0 auto;
+		}
+		.banner li {
+			float: left;
+			width: 217px;
+			height: 80px;
+			margin-right: 10px;
+		}
+		.one {
+			background-color: #9A6474FF;
+		}
+		.two {
+			background-color: #5EA05EFF;
+		}
+		.three {
+			background-color: #915DA1FF;
+		}
+		.banner .four {
+			background-color: #619E609C;
+			float: right;
+			/*margin-right: 0; 优先级低 ，这种方式不起作用，无法重叠*/
+			/*解决方法：提高优先级（加上.banner）*/
+			margin-right: 0;
+		}
+
+		.main {
+			height: 800px;
+			width: 900px;
+			background-color: #2DD13EFF;
+			color: red;
+			margin:0 auto;
+		}
+		.footer {
+			height: 100px;
+			width: 900px;
+			background-color: #982BD3FF;
+			color: red;
+			margin:0 auto;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="top-inner">top-inner</div>
+	</div>
+	<div class="banner">
+		<ul>
+			<li class="one">A</li>
+			<li class="two">B</li>
+			<li class="three">C</li>
+			<li class="four">D</li>
+		</ul>
+	</div>
+	<div class="main">
+		<div class="left">left</div>
+		<div class="right">right</div>
+	</div>
+	<div class="footer">footer</div>
+</body>
+</html>
