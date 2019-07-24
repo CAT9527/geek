@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>固定广告案例</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		.top{
+			height: 44px;
+			background:url(images/top.png) no-repeat top center;
+			position: fixed;
+			/*需要给宽值*/
+			width:100%;
+			top: 0px;
+			left: 0;
+		}
+		.box {
+			margin:44px auto 0;
+			width: 1002px;
+		}
+		.ad-l,.ad-r {
+			position: fixed;
+			top:100px;
+		}
+		.ad-r {
+			right: 0;
+		}
+
+	</style>
+</head>
+<body>
+	<img src="images/ad-l.png" height = "288" width = "120" alt="" class = "ad-l">
+	<img src="images/ad-r.png" height = "288" width = "120" alt=""class = "ad-r">
+	<div class="top"></div>
+	<div class="box">
+		<img src="images/box.png" height = "1960" width="1002" alt="">
+	</div>
+</body>
+</html>

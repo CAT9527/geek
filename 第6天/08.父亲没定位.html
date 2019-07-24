@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>父亲没定位，对齐的是浏览器本身</title>
+	<style>
+		.father{
+			width: 500px;
+			height: 500px;
+			background-color: pink;
+			margin:100px;
+			position: relative;
+		}
+		.son {
+			width: 200px;
+			height: 200px;
+			background-color: purple;
+			position: absolute;
+			top:50px;
+			left: 30px;
+			/*如果所有父元素都没有定位，以浏览器的当前屏幕为准对齐（document文档）*/
+		}
+		.san {
+			width: 200px;
+			height: 200px;
+			background-color: skyblue;
+			position: relative;
+			/*父级有定位，依据最近的已经定位（绝对、固定或相对定位）的父元素（祖先）进行定位。*/
+		}
+	</style>
+</head>
+<body>
+	<div class="san"></div>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

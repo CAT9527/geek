@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位</title>
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+/*			position: absolute;
+			top:10px;
+			left:10px;*/
+		}
+		.top {
+			/*绝对定位不占位置 跟浮动一样*/
+			position: absolute;
+			background-color: skyblue;
+			right: 0;
+			bottom:50%;
+		}
+		.bottom {
+			background-color: purple;
+			width: 110px;
+		}
+	</style>
+</head>
+<body>
+	<div class="top"></div>
+	<div class="bottom"></div>
+</body>
+</html>

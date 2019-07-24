@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exam</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.massage {
+			width: 908px;
+			height: 310px;
+			border: 1px solid #ccc;
+			padding-left: 30px;
+			margin:10px auto;
+		}
+		.massage h4 {
+			/*高度剩余法，不需要margin padding，仅用高度撑起盒子大小*/
+			height: 37px;    
+			margin-top: 40px;			
+		}
+		.massage h4 a {
+			font-family: "微软雅黑";
+			font-weight: normal;
+			color: red;
+		}
+
+		/*表单项建议使用外部css来控制长宽边距等等的外观问题*/
+		.massage textarea {
+			width: 842px;
+			height: 128px;
+			color: #ccc;
+			padding: 10px;
+		}
+		.massage input {
+			margin-top: 20px;
+		}
+		.massage p{
+			color: #f00;
+			font-size: 14px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="massage">
+		<h4>评论<img src="images/star.png" alt="评分"><a href="#">我要评论</a></h4>
+		<textarea>请输入意见</textarea>
+		<input type="image" src="images/btn.png" alt = "提交">
+		<p>暂时没有评论</p>
+	</div>
+</body>
+</html>

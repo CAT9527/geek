@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+		}
+		.top {
+			/*字比较特殊，当只有浮动的时候，字不会随着盒子的浮动而移动*/
+			/*float: left;*/
+
+			/*用定位可以实现字体与盒子一起移动*/
+			position: absolute;
+			top:0px;
+			left: 0px;
+
+			/*绝对定位是完全意义上的脱标*/
+
+		}
+		.bottom {
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">54632</div>
+	<div class="bottom">64532</div>
+</body>
+</html>

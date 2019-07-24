@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位模式</title>
+	<style>
+		div {
+			height: 100px;
+			background-color: pink;
+			/*float: left;*/   /*模式转换  inline-block*/			
+			/*1.加了float以后隐式转换成行内块元素*/
+			/*width: 100px;*/
+
+			/*2.绝对定位和固定定位都是转换成行内块元素*/
+			position: fixed;
+			width: 100%;
+			top:0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<div>asd</div>
+</body>
+</html>

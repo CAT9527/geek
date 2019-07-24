@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>例子</title>
+	<style>
+		div {
+			width: 250px;
+			height: 400px;
+			border: 1px solid #ccc;
+			float: left;
+			margin-left: -1px;   /*合并水平响铃边框*/
+			position: relative;
+		}
+		div:hover {
+			border: 1px solid red;
+			/*因为响铃边框是重叠的，所以需要设置z-index来凸显*/
+			z-index: 1;  
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

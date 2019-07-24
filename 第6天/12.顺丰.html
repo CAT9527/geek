@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		.sf {
+			width: 1259px;
+			height: 472px;
+			margin: 100px auto;
+			position: relative;
+		}
+
+		.nav {
+			width: 960px;
+			height: 80px;
+			background-color: #000;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -480px;
+		}
+		/*li 里面的a建议使用长宽先设置li*/
+		.nav li {
+			float: left;
+			width: 160px;
+			height: 80px;
+			list-style: none;
+			/*这里要是设置position，会导致盒子偏移*/
+		}
+
+		.nav li a {
+			width: 160px;
+			height: 80px;
+			display: block;
+			text-align: center;
+			line-height: 80px;
+			text-decoration: none;
+			background-color: black;
+			color: white;
+		}		
+		li a:hover{
+			color: black;
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="sf">
+		<a href="#">
+			<img src="images/sf.png" alt="" style="width: 1259px; height: 472px;">	
+		</a>
+
+		<div class="nav">
+			<ul>
+				<li><a href="#">运单查询</a></li>
+				<li><a href="#">运单查询</a></li>
+				<li><a href="#">运单查询</a></li>
+				<li><a href="#">运单查询</a></li>
+				<li><a href="#">运单查询</a></li>
+				<li><a href="#">运单查询</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+</body>
+</html>
