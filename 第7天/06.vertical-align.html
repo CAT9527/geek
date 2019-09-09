@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vertical-align</title>
+	<style>
+		/*图片底下默认存在三个像素，原因是图片默认和文字基线对齐*/
+		/*解决方法：
+		  1.图片img转block，块元素自站一行，不存在3px，这个比较好
+		  2.使用vertical-align: bottom/middle/top;都能解决，但不提倡
+		*/
+		div {
+			border: 1px solid red;
+		}
+		img {
+			vertical-align: bottom;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<img src="images/tudou.jpg" alt="">
+		ashdusaijodias我的大树
+	</div>
+</body>
+</html>

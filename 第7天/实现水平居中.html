@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实现盒子水平居中</title>
+</head>
+<style>
+		
+	.father {
+		width: 300px;
+		height: 300px;
+		background-color: pink;
+		margin-bottom: 20px;
+	}
+	.son {
+		background-color: #ccc;
+		font: normal bold 16px "微软雅黑";
+	}
+	.son-size {
+		width: 100px;
+		height: 100px;
+	}
+	
+	
+	.fa {
+		position: relative;
+	}
+	.s {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -50px;
+		margin-left: -50px;
+	}
+	
+	.s2 {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		margin: auto;
+	}
+	
+	.s3 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	
+	.fa4 {
+		line-height: 300px;
+		text-align: center;
+		font-size: 0px;
+	}
+	.s4 {
+		font-size: 16px;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: initial;
+		text-align: left;
+	}
+	
+	.fa5 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.fa6 {
+		display: flex;
+	}
+	.s6 {
+		margin: auto;
+	}
+	
+	.fa7 {
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.s7 {
+		display: inline-block;
+	}
+</style>
+</head>
+<body>
+	<div class="fa father">
+		<div class="s son son-size">1. absolute与负margin</div>
+	</div>
+	
+	<div class="fa father">
+		<div class="s2 son son-size">2. absolute与margin auto</div>
+	</div>
+	
+	<div class="fa father">
+		<div class="s3 son">3. absolute与transform</div>
+	</div>
+	
+	<div class="fa4 father">
+		<div class="s4 son son-size">4. line-height </div>
+	</div>
+	
+	<div class="fa5 father">
+		<div class="son">5. flex</div>
+	</div>
+	
+	<div class="fa6 father">
+		<div class="s6 son">6. flex与margin auto</div>
+	</div>
+	
+	<div class="fa7 father">
+		<div class="s7 son">7. table-cell</div>
+	</div>
+</body>
+</html>

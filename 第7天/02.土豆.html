@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>土豆（显示与隐藏）</title>
+	<style>
+		/*<!-- 不适合使用浮动，应该使用定位 -->*/
+		a {
+			display: block;
+			width: 448px;
+			height: 252px;
+			margin::100px;
+			position: relative;
+		}
+		.black {
+			width: 100%;
+			height: 100%;
+			background: #00000058 url(images/arr.png) no-repeat center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none;  /*正常情况隐藏*/
+		}
+		/*鼠标放在a身上， a 里面的 black出来 使用后代选择器*/
+		a:hover .black{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<a href="#">
+		<img src="images/tudou.jpg" height="252" width="448" alt="">
+		<div class="black"></div>
+	</a>
+</body>
+</html>

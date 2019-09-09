@@ -14,6 +14,16 @@
 		a {
 			text-decoration: none;
 		}
+		.clearfix:after {
+			content: "";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+		.clearfix {
+			*zoom: 1;
+		}
 		.all {
 			width: 1185px;
 			margin:100px auto;
@@ -36,39 +46,10 @@
 			padding-right: 2px;
 			float: left;
 		}
-		.one,
-		.two,
-		.three,
-		.four {
-			width: 30px;
-			height: 30px;
-			float: left;
-		}
+
 		.red {
 			color: #EB665CFF;
 		}
-		.one {
-			background: url(images/02.png) no-repeat top center;
-		}
-		.nav .blue {
-			border-color:#3287F1FF;
-		}
-		.two {
-			background: url(images/04.png) no-repeat top center;
-		}
-		.nav .pink {
-			border-color:#D36DA6FF;
-		}
-		.three {
-			background: url(images/01.png) no-repeat top center;
-		}
-		.nav .skyblue {
-			border-color:#2CA2CEFF;
-		}
-		.four {
-			background: url(images/03.png) no-repeat top center;
-		}
-
 		/*content开始*/
 		.content {
 			background-color: white;
@@ -78,7 +59,7 @@
 		.con_left ul {
 			display: inline-block;
 			float: left;
-			margin-right: 48px;
+			margin-right: 38px;
 		}
 		/*content left*/
 		.con_left ul li {
@@ -95,14 +76,6 @@
 		.con_left li a:hover {
 			color: red;
 		}
-		.put {
-			width: 486px;
-			height: 300px;
-			background: url(images/05.png) no-repeat top center;
-			position: absolute;
-			top: 0;
-			left: 109px;
-		}
 		.guiyang {
 			width: 189px;
 			height: 300px;
@@ -117,38 +90,20 @@
 			color: red;
 			float: right;
 		}
-		.yinzuo,
-		.jiuyuan,
-		.bailing,
-		.yadi {
-			width: 187px;
-			height: 143px;
+		.fourimg {
+			width: 392px;
+			float: right;
 		}
-		.yinzuo{
-			background:url(images/07.png) no-repeat top center;
-			margin-right: 10px;
-			position: absolute;
-			top: 0;
-			right: 192px;
-		}
-		.jiuyuan{
-			background:url(images/08.png) no-repeat top center;
-			position: absolute;
-			top: 0;
-			right: 0;
+		.jiuyuan {
+			float: right;		
 		}
 		.bailing {
-			background:url(images/09.png) no-repeat top center;
-			margin-right: 10px;
-			position: absolute;
-			top: 160px;
-			right: 192px;
+			float: left;
+			margin-top: 12px;
 		}
-		.yadi{
-			background:url(images/10.png) no-repeat top center;
-			position: absolute;
-			top: 160px;
-			right: 0;
+		.yadi {
+			float: right;
+			margin-top: 12px;
 		}
 	</style>
 </head>
@@ -158,19 +113,19 @@
 			<ul>
 				<li class = "red">
 					<h3 >星级大酒店</h3>
-					<div class="one"></div>
+					<img src="images/02.png" width = "30px" height="30px" alt="">
 				</li>
 				<li class = "blue">
 					<h3 >快捷酒店</h3>
-					<div class="two"></div>
+					<img src="images/04.png" width = "30px" height="30px" alt="">
 				</li>
 				<li  class = "pink">
 					<h3>主题酒店</h3>
-					<div class="three"></div>
+					<img src="images/01.png" width = "30px" height="30px" alt="">
 				</li>
 				<li class = "skyblue">
 					<h3>空间站</h3>
-					<div class="four"></div>
+					<img src="images/03.png" width = "30px" height="30px" alt="">
 				</li>
 			</ul>
 		</div>
@@ -187,17 +142,19 @@
 					<li><a href="#">呼伦贝尔</a></li>
 				</ul>
 			</div>
-			<div class="put"></div>
+			<img src="images/05.png" width="486" height="300" class = "put" alt="">
 			<div class="guiyang">
 				<img src="images/06.png" width="189" height="200" alt="">
 				<p>贵阳橙天精品酒店（...
 			    &nbsp酒店是按照四级标准设计和装修的豪华型商务...</p>
 			    <span>￥239起</span>
 			</div>
-			<div class="yinzuo"></div>
-			<div class="jiuyuan"></div>
-			<div class="bailing"></div>
-			<div class="yadi"></div>
+			<div class="fourimg clearfix">
+			<img src="images/07.png" alt="">
+			<img src="images/08.png" class = "jiuyuan" alt="">				
+			<img src="images/09.png" class = "bailing" alt="">
+			<img src="images/10.png" class = "yadi" alt="">
+			</div>
 		</div>
 	</div>
 </body>

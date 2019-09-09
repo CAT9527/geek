@@ -1,0 +1,412 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.clearfix:after {  
+	content: "";
+	display: block;
+	height: 0;
+	clear:both;
+	visibility: hidden;
+}
+/*ie6、7专有*/
+.clearfix {
+	*zoom: 1;
+}
+
+/*顶部导航栏开始*/
+.header {
+	width: 100%;
+	height: 60px;
+	background-color: #00000070;
+	position: absolute;
+    z-index: 2;
+}
+.inner {
+	height: 60px;
+	width: 1190px;
+	margin:0 auto;
+	line-height: 60px;
+}
+.logo {
+	float: left;
+	padding:0 15px 0 0;
+	line-height: 88px;
+}
+.logo a {
+	display: block;
+	width: 137px;
+	height: 60px;
+}
+.nav a {
+	font: 14px Microsoft Yahei;
+	color: white;
+}
+.nav-left {
+	float: left;
+}
+.nav-left a {
+	font-weight: 700;
+}
+.nav-left li {
+	float: left;
+	padding: 0 15px;
+	margin:0 2px;
+}
+.nav-left .nav-left-shouye {
+	background-color: #FD8238FF;
+}
+.nav-left .mask:hover{
+	height: 57px;
+	border-bottom: 3px solid #FD8238FF;
+}
+
+.nav-right {
+	float: right;
+}
+.nav-right li {
+	float: left;
+	padding: 0 15px;
+}
+.nav-right a:hover {
+	text-decoration: underline;
+}
+.nav-right .mian a {
+	width: 84px;
+	height: 19px;
+	padding: 4px 8px;
+	background-color: #3D97E3BD;
+}
+.nav-right .mian a:hover {
+	background-color: #3D97E3FF;
+}
+/*顶部导航栏结束*/
+
+/*Banner开始*/
+.banner {
+	position: relative;
+}
+.banner img{
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	left: 50%;
+	width: 1920px;
+	margin-left: -960px;
+}
+
+.left,.right {
+	width: 70px;
+	height: 70px;
+	background-color: #548F91FF;
+	position: absolute;
+	top:50%;
+	margin-top: -55px;
+
+	/*改里面的内容的样式*/
+	text-align: center;
+	line-height: 70px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 45px;
+	border-radius: 50%;
+	font-weight: 700;
+}
+.left {
+	left:40px;
+}
+.right {
+	right: 40px;
+}
+.banner a:hover {
+	background-color: #385F60FF;
+}
+/*Banner结束*/
+
+/*Content开始*/
+.wanzhuan,
+.remen,
+.baozhang,
+.tiyan,
+.story,
+.help-content {
+	width: 1190px;
+	padding: 20px 0 0;
+	margin:0 auto;
+}
+.wanzhuan-bd ,
+.remen-bd,
+.baozhang-bd,
+.tiyan-bd,
+.story-bd {
+	padding: 50px 0 40px;
+
+}
+.bd-h3 {
+    font:34px "微软雅黑";
+	font-weight: 500;
+	text-align: center;
+}
+/*玩转开始*/
+.wanzhuan-hd {
+	margin-left: -18px;
+	position: relative;
+}
+.wanzhuan-hd ul li {
+	float: left;
+	margin-left: 22px;
+	position: relative;
+}
+.wanzhuan-hd li div {
+	width: 240px;
+	height: 50px;
+	padding: 15px 20px;
+	position: absolute;
+	left: 0px;
+	bottom: 3px;
+}
+.wanzhuan-hd li h5 {
+	text-align: left;
+	font: 20px "微软雅黑";
+	color: white;
+	margin-bottom: 5px;
+}
+.wanzhuan-hd li h6 {
+	text-align: left;
+	font: 14px "微软雅黑";
+	color: white;
+}
+.wanzhuan-hd li .red {
+	background-color: #FF6666FF;
+}
+.wanzhuan-hd li .yellow {
+	background-color: #FFB000FF;
+}
+.wanzhuan-hd li .green {
+	background-color: #36C48FFF;
+}
+.wanzhuan-hd li .black {
+	background-color: #404A54FF;
+}
+/*玩转结束*/
+
+/*当季热门开始*/
+.remen-hd {
+	margin-left: -15px;
+	position: relative;
+}
+.remen-hd ul li {
+	float: left;
+	padding-left: 15px;
+}
+.remen-left,
+.remen-right{
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	font-size: 50px;
+}
+
+.remen-left {
+	left:-15px;
+}
+.remen-right {
+	right:-30px;
+}
+/*当季热门结束*/
+
+/*安心住保障开始*/
+.baozhang-hd li{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.baozhang-hd li a {
+	display: inline-block;
+}
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+	background-image: url(../images/3.png);
+	width: 90px;
+	height: 90px;
+	text-align: center;
+}
+.img-1 {
+	background-position: 0 0;
+}
+.img-2 {
+	background-position: -95px 0;
+}
+.img-3 {
+	background-position: 0 -95px;
+}
+.img-4 {
+	background-position: -95px -95px;
+}
+.baozhang-hd a p {
+	display: block;
+	margin-top: 16px;
+	color: #333;
+	font:22px "微软雅黑";
+}
+.baozhang-hd a span {
+	display: block;
+	color: #333;
+	font:15px "微软雅黑";
+}
+/*安心住保障结束*/
+
+/*房屋体验开始*/
+.tiyan li{
+	float: left;
+	margin:0 0 25px 25px; 
+}
+.tiyan ul {
+	margin-left: -25px;
+}
+.tiyan-hd li img {
+	display: block;
+	width: 380px;
+	height: 285px;
+}
+
+.tiyan-hd li a {
+	font: 20px "微软雅黑";
+	display: block;
+	margin:10px 0 5px;
+	color: #333;
+}
+.tiyan-hd li a:hover {
+	text-decoration: underline;
+}
+.tiyan-hd li p {
+	font: 14px "微软雅黑";
+	color: #666;
+}
+.more {
+	margin-top: 30px;
+	text-align: center; 
+}
+.more a {
+	display: inline-block;
+	width: 132px;
+	height: 36px;
+	color: #666;
+	font:14px "微软雅黑";
+	border:1px solid #666;
+	line-height: 36px;
+}
+.more a:hover {
+	border-color: #FD8238;
+	color: #FD8238;
+}
+/*房屋体验结束*/
+
+/*房东故事开始*/
+.story-hd li {
+	float: left;
+	margin-left: 30px;
+	position: relative;
+}
+.story ul {
+	margin-left: -30px;
+	position: relative;
+}
+.story-hd li div {
+	width: 580px;
+	height: 85px;
+	position: absolute;
+	bottom: 3px;
+	left: 0;
+	z-index: 0;
+	background: url(../images/18.png) repeat-x;
+}
+.story li h3 {
+    font-family: Microsoft Yahei,Hiragino Sans GB,Helvetica Neue,Helvetica,tahoma,arial,Verdana,sans-serif;
+    font-size: 18px;
+    color: #fff;
+    padding:0 0 10px 20px; 
+}
+.story li p {
+    font-family: Microsoft Yahei,Hiragino Sans GB,Helvetica Neue,Helvetica,tahoma,arial,Verdana,sans-serif;
+    font-size: 12px;
+    color: #fff;
+    padding:0 0 10px 20px; 
+}
+/*房东故事结束*/
+/*Content结束*/
+
+/*footer开始*/
+.footer {
+	padding-top: 20px;
+}
+/*help开始*/
+.help {
+	background-color: #F7F7F7FF;
+}
+.help-content {
+	padding: 40px 0;
+}
+.help-content-left {
+	display: inline-block;
+	width: 370px;
+	height: 151px;
+	float: left;
+}
+.help-content-middle {
+	display: inline-block;
+}
+.help-content-right {
+	display: inline-block;
+	width: 300px;
+	height: 151px;
+	float: right;
+}
+.left-guonei，
+.left-haiwai{
+	display: block;
+	color: #333;
+	font:14px "微软雅黑";
+}
+.left-guonei {
+	margin-bottom: 9px;
+}
+.left-haiwai {
+	margin: 26px 0 9px;
+}
+.phone {
+	display: block;
+	color: #333;
+	font:22px Tahoma;
+}
+.help-content-middle div{
+	display: inline-block;
+	margin-right: 58px;
+	text-align: center;
+}
+.help-content-middle p {
+	margin-bottom: 9px;
+	font: 14px "微软雅黑";
+}
+.help-content-right div {
+	display: inline-block;
+	float: left;
+}
+.help-content-right a{
+	display: block;
+	margin-bottom: 24px;
+}
+.help-content-right .jiaru {
+	margin-left: 88px;
+}
+/*help结束*/
+
+/*footer结束*/

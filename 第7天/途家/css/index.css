@@ -1,0 +1,242 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.clearfix:after {  
+	content: "";
+	display: block;
+	height: 0;
+	clear:both;
+	visibility: hidden;
+}
+/*ie6、7专有*/
+.clearfix {
+	*zoom: 1;
+}
+.header {
+	height: 640px;
+	background:url(../images/1.jpg) no-repeat top center;
+	position: relative;
+}
+.top {
+	height: 60px;
+	background-color: #00000070;
+}
+.nav {
+	width: 1190px;
+	height: 60px;
+	margin:0 auto;
+	text-align: center;
+}
+/*导航栏的图片在a盒子中垂直对齐*/
+.nav a{
+	text-align: center;
+	line-height: 60px;
+	vertical-align: middle;
+	float: left;        
+}
+.nav a img {
+	vertical-align: middle;
+	padding-right: 15px;
+}
+.nav .left {
+	float: left;
+}
+.nav li {
+	float: left;
+	line-height: 60px;
+	text-align: center;
+	margin: 0 5px;          
+}
+.nav .left a{
+	height: 60px;
+	color: white;
+	padding: 0 15px;
+	font: 14px "微软雅黑";
+	line-height: 60px;
+	font-weight: 700;
+}
+.left li:hover{
+	border-bottom: 5px solid  #FD8238FF;
+}
+.nav .left-1 {
+	background-color: #FD8238FF;
+}
+.nav .right {
+	float: right;
+}
+.nav .right a{
+	color: white;
+	margin: 0px 5px 0 17px;
+	font: 14px "微软雅黑";
+	line-height: 60px;
+}
+.nav .right a:hover {
+	text-decoration: underline;
+}
+.nav li .blue {
+	width: 60px;
+	height: 60px;
+	background-color: #3D97E3FF;
+}
+
+.sousuo {
+	text-align: center;
+	position: relative;
+	margin:0 auto;
+	width: 1190px;
+}
+.sousuo li {
+	float: left;
+	background-color: white;
+	z-index: 1;
+	position: absolute;
+	bottom: 15px;
+}
+
+.sousuo li input {
+	width: 300px;
+	height: 58px;
+}
+.point {
+	width: 100%;
+	height: 70px;
+	margin:-35px 0 0;
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+}
+.point a {
+	display: inline-block;
+}
+.point_left {
+	width: 70px;
+	height: 70px;
+	background-image:url(../images/3.png);
+	background-position: -190px 0;
+	float: left;
+	margin-left: 30px;
+}
+.point_right {
+	width: 70px;
+	height: 70px;
+	background-image:url(../images/3.png);
+	background-position: -75px -190px;
+	float: right;
+	margin-right: 30px;
+}
+
+.content {
+	width: 1190px;
+	margin:0 auto;
+	text-align: center;
+}
+.wanzhuan {
+	width: 1190px;
+	margin:0 auto;
+	text-align: center;
+}
+h3 {
+	font:34px "微软雅黑";
+	font-weight: 500;
+	padding: 50px 0 40px;
+}
+.four {
+	float: left;
+}
+.four ul li {
+	float: left;
+	margin-left: 22px;
+	position: relative;
+}
+.four ul .no-left {
+	margin-left: -22px;
+}
+.four li div {
+	width: 240px;
+	height: 50px;
+	padding: 15px 20px;
+	background-color: #FF6666FF;
+	position: absolute;
+	left: 0px;
+	bottom: 3px;
+}
+.four li .leftx {
+	left: -22px;
+}
+.four li h5 {
+	text-align: left;
+	font: 20px "微软雅黑";
+	color: white;
+	margin-bottom: 5px;
+}
+.four li h6 {
+	text-align: left;
+	font: 14px "微软雅黑";
+	color: white;
+}
+.four li .yellow {
+	background-color: #FFB000FF;
+}
+.four li .green {
+	background-color: #36C48FFF;
+}
+.four li .black {
+	background-color: #404A54FF;
+}
+.remen {
+	width: 1190px;
+	margin:0 auto;
+	text-align: center;
+}
+.remen ul li {
+	float: left;
+	margin-right: 15px;
+}
+.remen ul .no-right {
+	float: left;
+	margin-right: 0;
+}
+
+.anxin ul li{
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.anxin ul div {
+	width: 90px;
+	height: 90px;
+	background-image: url(../images/3.png);
+	margin:0 auto;
+}
+.anxin p {
+	font:22px "微軟雅黑";
+	margin-top:16px;
+}
+.anxin span {
+	font:16px "微軟雅黑";
+	line-height: 40px;
+}
+.anxin a,a:link {
+	color: black;
+}
+.tiyan ul{
+	width: 1215px;
+}
+.tiyan ul li {
+	float: left;
+	width: 385px;
+	height: 351px;
+	margin: 0 0 25px 20px;
+}
+.tiyan li img {
+	width: 380px;
+	height: 285px;
+}
